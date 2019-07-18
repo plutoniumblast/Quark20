@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <h1 id="argon-design-system"><a href="https://www.creative-tim.com/product/vue-argon-design-system">Vue Argon Design System</a></h1>
 
 <p><img src="https://s3.amazonaws.com/creativetim_bucket/products/92/original/opt_argon_vue_thumbnail.jpg?1534236902" alt="Product Gif" /></p>
@@ -198,3 +199,6 @@
   <li>Google+: <a href="https://plus.google.com/+CreativetimPage">https://plus.google.com/+CreativetimPage</a></li>
   <li>Instagram: <a href="https://www.instagram.com/CreativeTimOfficial">https://www.instagram.com/CreativeTimOfficial</a></li>
 </ul>
+=======
+A website in development for the Quark 2020 techno management festival at BITS Goa.
+>>>>>>> 1d660f25115781407ec09214d8f038e6fb98262d
