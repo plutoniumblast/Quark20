@@ -8,10 +8,6 @@ body,
     font-family: Ailerons;
     src: url("Ailerons-Typeface.otf") format("opentype");
 }
-/* .centralize{
-  margin: 0 auto;
-  width: auto;
-} */
 @font-face {
     font-family: Blanka;
     src: url("Raxtor-Regular.otf") format("opentype");
