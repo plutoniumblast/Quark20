@@ -33,7 +33,7 @@
                 <label>College Address</label>
             </div>
             <div class="inputBox">
-                <input type="text" name="entry.1043572119" required value="">
+                <input type="text" name="entry.1043572119" id="public-email" required value="">
                 <label>Email ID</label>
             </div>
             <div class="inputBox">
@@ -211,12 +211,33 @@
                 </div>
             </div>
 
-            <input type="submit" name="sign-in" value="Submit" onclick="redirect();">
+            <input type="submit" name="sign-in" value="Submit" id="send-mail">
     </div>
 
     </form>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        $("#send-mail").on("click",
+        function sendMail(){
+            var settings = {
+                "async": true,
+                "crossDomain": true,
+                "url": "https://0y8nv0lz72.execute-api.us-east-2.amazonaws.com/prod/registration/confirm",
+                "method": "POST",
+                "data": JSON.stringify({"email": $("#public-email").val()})
+            }
+        
+            $.ajax(settings).done(function (response) {
+                console.log(response);
+                // redirect();
+            });
+        });
+    </script>
     <script type="text/javascript">
         var x, i, j, selElmnt, a, b, c;
         /*look for any elements with the class "custom-select":*/
